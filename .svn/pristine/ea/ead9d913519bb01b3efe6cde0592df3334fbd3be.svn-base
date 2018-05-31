@@ -1,0 +1,333 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menuscreenbg">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ScrollView
+            android:fillViewport="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Card Number:"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="4448-XXX-XXXX-8743"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Address Line:"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="#54 park street, LosAngles" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="City:"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="LosAngles"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Postal code:"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="4654654"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Current Balance:"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/currentBal"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="SGD 10302.78"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Transaction Period:"
+                        android:textStyle="bold"/>
+
+                    <Spinner
+                        android:id="@+id/spinner1"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/transactionPeriod"/>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/showStatement"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="35dp"
+                    android:background="@drawable/style_btn"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:text="Submit"
+                    android:textColor="@color/white"/>
+
+                <TableLayout
+                    android:id="@+id/statementTable"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:visibility="invisible"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="30dp"
+                    android:stretchColumns="1">
+                    <TableRow>
+                        <TextView
+                            android:text="Date"
+                            android:gravity="center"
+                            style="@style/statementStyle"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:text="Description"
+                            android:gravity="center"
+                            style="@style/statementStyle"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:text="Amount"
+                            android:gravity="left"
+                            android:textStyle="bold"
+                            style="@style/statementStyle" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="15-05-2018"
+                            style="@style/statementStyle2"
+                            android:gravity="left"/>
+                        <TextView
+                            android:text="8400110/HOBBY CRAFT LTD"
+                            android:gravity="center"
+                            style="@style/statementStyle2"/>
+                        <TextView
+                            android:text="125000"
+                            android:gravity="left"
+                            style="@style/statementStyle2"
+                            android:textColor="@color/tabindicator"/>
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:text="14-05-2018"
+                            style="@style/statementStyle2"
+                            android:gravity="left"/>
+                        <TextView
+                            android:text="8300345/CONFECTIONERY"
+                            android:gravity="center"
+                            style="@style/statementStyle2" />
+                        <TextView
+                            android:text="6800"
+                            android:gravity="left"
+                            style="@style/statementStyle2"
+                            android:textColor="@color/red" />
+                    </TableRow>
+
+
+                    <TableRow>
+                        <TextView
+                            android:text="05-05-2018"
+                            style="@style/statementStyle2"
+                            android:gravity="left"/>
+                        <TextView
+                            android:text="8300135/ATLANTIC SHOPPING"
+                            android:gravity="center"
+                            style="@style/statementStyle2" />
+                        <TextView
+                            android:text="2650"
+                            android:gravity="left"
+                            style="@style/statementStyle2"
+                            android:textColor="@color/red"/>
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:text="01-05-2018"
+                            style="@style/statementStyle2"
+                            android:gravity="left"/>
+                        <TextView
+                            android:text="7999008/ASDA SUPERSTORE"
+                            android:gravity="center"
+                            style="@style/statementStyle2"/>
+                        <TextView
+                            android:text="8900"
+                            android:gravity="left"
+                            style="@style/statementStyle2"
+                            android:textColor="@color/tabindicator" />
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:text="31-04-2018"
+                            style="@style/statementStyle2"
+                            android:gravity="left"/>
+                        <TextView
+                            android:text="700022/HIGH BARNET DENTAL"
+                            android:gravity="center"
+                            style="@style/statementStyle2" />
+                        <TextView
+                            android:text="2650"
+                            android:gravity="left"
+                            android:textColor="@color/red"
+                            style="@style/statementStyle2"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="28-04-2018"
+                            style="@style/statementStyle2"
+                            android:gravity="left"/>
+                        <TextView
+                            android:text="668950/HEAD - BRISTOL"
+                            android:gravity="center"
+                            style="@style/statementStyle2"/>
+                        <TextView
+                            android:text="2650"
+                            android:gravity="left"
+                            style="@style/statementStyle2"
+                            android:textColor="@color/tabindicator"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="24-04-2018"
+                            style="@style/statementStyle2"
+                            android:gravity="left"/>
+                        <TextView
+                            android:text="7892035/AA MEDIA "
+                            android:gravity="center"
+                            style="@style/statementStyle2"/>
+                        <TextView
+                            android:text="8500"
+                            android:gravity="left"
+                            style="@style/statementStyle2"
+                            android:textColor="@color/tabindicator" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="22-04-2018"
+                            style="@style/statementStyle2"
+                            android:gravity="left"/>
+                        <TextView
+                            android:text="7892098/ACE GRAPHICS"
+                            android:gravity="center"
+                            style="@style/statementStyle2" />
+                        <TextView
+                            android:text="22000"
+                            android:gravity="left"
+                            style="@style/statementStyle2"
+                            android:textColor="@color/tabindicator" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="13-04-2018"
+                            style="@style/statementStyle2"
+                            android:gravity="left"/>
+                        <TextView
+                            android:text="70022/HIGH DENTAL"
+                            android:gravity="center"
+                            style="@style/statementStyle2" />
+                        <TextView
+                            android:text="250"
+                            android:gravity="left"
+                            android:textColor="@color/red"
+                            style="@style/statementStyle2"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="02-04-2018"
+                            style="@style/statementStyle2"
+                            android:gravity="left"/>
+                        <TextView
+                            android:text="6690850/BRISTOL"
+                            android:gravity="center"
+                            style="@style/statementStyle2"/>
+                        <TextView
+                            android:text="2659"
+                            android:gravity="left"
+                            style="@style/statementStyle2"
+                            android:textColor="@color/tabindicator"/>
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>

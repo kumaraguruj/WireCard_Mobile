@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="D:\WireCard\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="a44d051b0d0fcb493840c6d643710be8fbc3af04">
+        <dex dex="D:\WireCard\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_925fa17c7c13a06b2c9328ee52761f7ad0f3c46a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\WireCard\app\libs\achartengine-0.7.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="f51933deafdd1ffc8f3a2d7214260f124dd10af6">
+        <dex dex="D:\WireCard\app\build\intermediates\transforms\dex\debug\folders\1000\2\achartengine-0.7.0_aadec0a909017bf9bff9f19879ded96cebb25451\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\WireCard\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="D:\WireCard\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_5665f1177ef886fb642c70ff9639375992310385\classes.dex" />
+    </item>
+
+</items>

@@ -1,0 +1,338 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menuscreenbg">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+    <!--<TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Transactions"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="18sp"/>-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.25"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Card Number:"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="4448-XXX-XXXX-8743"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Transaction Type:"
+                android:textStyle="bold"/>
+            <Spinner
+                android:id="@+id/spinnerTrans_bob"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:entries="@array/transaction_type"/>
+            <!--<TextView
+                android:id="@+id/spinnerTrans"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Debit"/>-->
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="From Date*:"
+                android:textStyle="bold"/>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:focusable="false"
+                android:id="@+id/fromDate"/>
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="To Date*:"
+                android:textStyle="bold"/>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:focusable="false"
+                android:id="@+id/toDate"/>
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <!--<TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"/>
+        <Button
+            android:id="@+id/transacbtn_bob"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:background="@drawable/style_btn"
+            android:text="Submit" />
+        <TableLayout
+            android:id="@+id/statementTable2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4.75"
+            android:visibility="invisible"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="30dp"
+            android:stretchColumns="1">
+            <TableRow>
+                <TextView
+                    android:text="Date"
+                    android:gravity="center"
+                    style="@style/statementStyle"
+                    android:textStyle="bold" />
+                <TextView
+                    android:text="Description"
+                    android:gravity="center"
+                    style="@style/statementStyle"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:text="Amount"
+                    android:gravity="left"
+                    android:textStyle="bold"
+                    style="@style/statementStyle" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="15-05-2018"
+                    style="@style/statementStyle2"
+                    android:gravity="left"/>
+                <TextView
+                    android:text="8400110/HOBBY CRAFT LTD"
+                    android:gravity="center"
+                    style="@style/statementStyle2"/>
+                <TextView
+                    android:text="125000"
+                    android:gravity="left"
+                    style="@style/statementStyle2"
+                    android:textColor="@color/tabindicator"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="14-05-2018"
+                    style="@style/statementStyle2"
+                    android:gravity="left"/>
+                <TextView
+                    android:text="8300345/CONFECTIONERY"
+                    android:gravity="center"
+                    style="@style/statementStyle2" />
+                <TextView
+                    android:text="6800"
+                    android:gravity="left"
+                    style="@style/statementStyle2"
+                    android:textColor="@color/red" />
+            </TableRow>
+
+
+            <TableRow>
+                <TextView
+                    android:text="05-05-2018"
+                    style="@style/statementStyle2"
+                    android:gravity="left"/>
+                <TextView
+                    android:text="8300135/ATLANTIC SHOPPING"
+                    android:gravity="center"
+                    style="@style/statementStyle2" />
+                <TextView
+                    android:text="2650"
+                    android:gravity="left"
+                    style="@style/statementStyle2"
+                    android:textColor="@color/red"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="01-05-2018"
+                    style="@style/statementStyle2"
+                    android:gravity="left"/>
+                <TextView
+                    android:text="7999008/ASDA SUPERSTORE"
+                    android:gravity="center"
+                    style="@style/statementStyle2"/>
+                <TextView
+                    android:text="8900"
+                    android:gravity="left"
+                    style="@style/statementStyle2"
+                    android:textColor="@color/tabindicator" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="31-04-2018"
+                    style="@style/statementStyle2"
+                    android:gravity="left"/>
+                <TextView
+                    android:text="700022/HIGH BARNET DENTAL"
+                    android:gravity="center"
+                    style="@style/statementStyle2" />
+                <TextView
+                    android:text="2650"
+                    android:gravity="left"
+                    android:textColor="@color/red"
+                    style="@style/statementStyle2"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="28-04-2018"
+                    style="@style/statementStyle2"
+                    android:gravity="left"/>
+                <TextView
+                    android:text="668950/HEAD - BRISTOL"
+                    android:gravity="center"
+                    style="@style/statementStyle2"/>
+                <TextView
+                    android:text="2650"
+                    android:gravity="left"
+                    style="@style/statementStyle2"
+                    android:textColor="@color/tabindicator"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="24-04-2018"
+                    style="@style/statementStyle2"
+                    android:gravity="left"/>
+                <TextView
+                    android:text="7892035/AA MEDIA "
+                    android:gravity="center"
+                    style="@style/statementStyle2"/>
+                <TextView
+                    android:text="8500"
+                    android:gravity="left"
+                    style="@style/statementStyle2"
+                    android:textColor="@color/tabindicator" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="22-04-2018"
+                    style="@style/statementStyle2"
+                    android:gravity="left"/>
+                <TextView
+                    android:text="7892098/ACE GRAPHICS"
+                    android:gravity="center"
+                    style="@style/statementStyle2" />
+                <TextView
+                    android:text="22000"
+                    android:gravity="left"
+                    style="@style/statementStyle2"
+                    android:textColor="@color/tabindicator" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="13-04-2018"
+                    style="@style/statementStyle2"
+                    android:gravity="left"/>
+                <TextView
+                    android:text="70022/HIGH DENTAL"
+                    android:gravity="center"
+                    style="@style/statementStyle2" />
+                <TextView
+                    android:text="250"
+                    android:gravity="left"
+                    android:textColor="@color/red"
+                    style="@style/statementStyle2"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="02-04-2018"
+                    style="@style/statementStyle2"
+                    android:gravity="left"/>
+                <TextView
+                    android:text="6690850/BRISTOL"
+                    android:gravity="center"
+                    style="@style/statementStyle2"/>
+                <TextView
+                    android:text="2659"
+                    android:gravity="left"
+                    style="@style/statementStyle2"
+                    android:textColor="@color/tabindicator"/>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</FrameLayout>

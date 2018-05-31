@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home2"
+            android:icon="@drawable/home"
+            android:title="Home" />
+        <item
+            android:id="@+id/overview"
+            android:icon="@drawable/overview"
+            android:title="Overview" />
+        <item
+            android:id="@+id/selfservice"
+            android:icon="@drawable/service"
+            android:title="Self Service" />
+        <item
+            android:id="@+id/nav_fund"
+            android:icon="@drawable/movemoney"
+            android:title="Funds Transfer" />
+        <item
+            android:id="@+id/reports"
+            android:icon="@drawable/reports"
+            android:title="Reports" />
+        <!--<item
+            android:id="@+id/averageBal"
+            android:icon="@drawable/creditcard"
+            android:title="Credit Card Average Balance" />
+        <item
+            android:id="@+id/expenseCat"
+            android:icon="@drawable/expensecategory"
+            android:title="Expenses by category" />-->
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/logout"
+            android:title="Logout" />
+    </group>
+
+</menu>

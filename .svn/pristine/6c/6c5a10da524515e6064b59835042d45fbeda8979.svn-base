@@ -1,0 +1,86 @@
+<resources>
+    <string name="app_name">WireCard</string>
+
+    //Views Names
+    <string name="textview_hint_username">Username</string>
+    <string name="textview_hint_password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="create_acc">Create an account</string>
+    <string name="btnLogin">Login</string>
+    <string name="title_activity_home1">Home</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">This is under construction</string>
+    <string name="title_activity_home_alice">Home</string>
+    <string name="bob_acc_num">100300000000012409</string>
+    <string name="bob_card_num">4448-XXX-XXXX-8743</string>
+    <string name="alice_acc_num">1003000000000124555</string>
+    <string name="alice_prim_card_num">4488-XXXX-XXXX-5518</string>
+    <string name="alice_sec_card_num">4488-XXXX-XXXX-5500</string>
+    <string name="status">Active</string>
+    <string-array name="transaction_type">
+        <item>Both</item>
+        <item>Debit</item>
+        <item>Credit</item>
+    </string-array>
+
+    <string-array name="card_type">
+        <item>All</item>
+        <item>4448-88XX-XXXX-5500</item>
+        <item>4448-88XX-XXXX-5518</item>
+    </string-array>
+
+    <string-array name="cardblock_type">
+        <item>Select</item>
+        <item>4448-XXX-XXXX-8743</item>
+        <item>4448-8865-4331-5518</item>
+    </string-array>
+    <string-array name="bob_cardblock_type">
+        <item>Select</item>
+        <item>4448-XXX-XXXX-8743</item>
+    </string-array>
+    <string-array name="blockreason">
+        <item>Select</item>
+        <item>Lost</item>
+        <item>Stolen</item>
+    </string-array>
+
+    <string-array name="transactionPeriod">
+        <item>May 2018</item>
+        <item>April 2018</item>
+        <item>Mar 2018 </item>
+        <item>Card Expired</item>
+    </string-array>
+
+    <string-array name="sourceWallet">
+        <item>USD</item>
+        <item>SGD</item>
+        <item>INR</item>
+
+    </string-array>
+
+    <string-array name="destinationWallet">
+        <item>INR</item>
+        <item>USD</item>
+        <item>SGD</item>
+
+    </string-array>
+
+    <string-array name="autopaycard">
+        <item>Select</item>
+        <item>4448-XXXX-XXXX-5500</item>
+        <item>4448-XXXX-XXXX-5518</item>
+
+    </string-array>
+    <string-array name="aliceofferselect">
+        <item>Select</item>
+        <item>6 months 3% interest</item>
+        <item>12 months 6% interest</item>
+        <item>18months 9% interest</item>
+    </string-array>
+</resources>

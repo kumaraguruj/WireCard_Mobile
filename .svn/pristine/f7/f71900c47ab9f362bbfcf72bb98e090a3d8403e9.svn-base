@@ -1,0 +1,103 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\WireCard\app\src\main\AndroidManifest.xml:2:1-25:12
+	package
+		ADDED from D:\WireCard\app\src\main\AndroidManifest.xml:3:5-33
+		INJECTED from D:\WireCard\app\src\main\AndroidManifest.xml
+		INJECTED from D:\WireCard\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\WireCard\app\src\main\AndroidManifest.xml
+		INJECTED from D:\WireCard\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\WireCard\app\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from D:\WireCard\app\src\main\AndroidManifest.xml
+		INJECTED from D:\WireCard\app\src\main\AndroidManifest.xml
+application
+ADDED from D:\WireCard\app\src\main\AndroidManifest.xml:5:5-23:19
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\sirisha.kalluri.ATTRAGROUP\.android\build-cache\f6cb21598f9de716facdf4f2d930b87db55c65bb\output\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:design:26.0.0-alpha1] C:\Users\sirisha.kalluri.ATTRAGROUP\.android\build-cache\fe830f2a3de5b06ec9c11788e3bac1a7c7fbafa3\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\sirisha.kalluri.ATTRAGROUP\.android\build-cache\aa4310659a6714154b5c758022601ab3004a3da5\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\sirisha.kalluri.ATTRAGROUP\.android\build-cache\5c694bdee59cb659b6067926ffe8e5fc95c74008\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\sirisha.kalluri.ATTRAGROUP\.android\build-cache\a4222c9f90e872a86030277af38acb09f79843fa\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:transition:26.0.0-alpha1] C:\Users\sirisha.kalluri.ATTRAGROUP\.android\build-cache\35f46c2fb220225d407e5f4e9f8eb405e4ad070a\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\sirisha.kalluri.ATTRAGROUP\.android\build-cache\40f9fc907a3444cf8d8726ffb8de586c728cfff5\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\sirisha.kalluri.ATTRAGROUP\.android\build-cache\fed9d5b58954411beecca9bcdcf40b4490f56bca\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\sirisha.kalluri.ATTRAGROUP\.android\build-cache\7b2a807ee274bfd807fc664b86675e5614c0722d\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\sirisha.kalluri.ATTRAGROUP\.android\build-cache\4e1bae509d8a14cb503ca32614d9760fa1ab7d6d\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\sirisha.kalluri.ATTRAGROUP\.android\build-cache\a71908c02be7980e5a15fac3d1201c433ed59f35\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\sirisha.kalluri.ATTRAGROUP\.android\build-cache\d382b7e9478b2319887f4a30d92da0e9f078a69e\output\AndroidManifest.xml:29:5-20
+	android:label
+		ADDED from D:\WireCard\app\src\main\AndroidManifest.xml:8:9-41
+	android:supportsRtl
+		ADDED from D:\WireCard\app\src\main\AndroidManifest.xml:10:9-35
+	android:roundIcon
+		ADDED from D:\WireCard\app\src\main\AndroidManifest.xml:9:9-54
+	android:allowBackup
+		ADDED from D:\WireCard\app\src\main\AndroidManifest.xml:6:9-35
+	android:icon
+		ADDED from D:\WireCard\app\src\main\AndroidManifest.xml:7:9-43
+	android:theme
+		ADDED from D:\WireCard\app\src\main\AndroidManifest.xml:11:9-40
+activity#com.attra.wirecard.activity.LoginActivity
+ADDED from D:\WireCard\app\src\main\AndroidManifest.xml:12:9-18:20
+	android:name
+		ADDED from D:\WireCard\app\src\main\AndroidManifest.xml:12:19-57
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from D:\WireCard\app\src\main\AndroidManifest.xml:13:13-17:29
+action#android.intent.action.MAIN
+ADDED from D:\WireCard\app\src\main\AndroidManifest.xml:14:17-69
+	android:name
+		ADDED from D:\WireCard\app\src\main\AndroidManifest.xml:14:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\WireCard\app\src\main\AndroidManifest.xml:16:17-77
+	android:name
+		ADDED from D:\WireCard\app\src\main\AndroidManifest.xml:16:27-74
+activity#com.attra.wirecard.activity.HomeActivity
+ADDED from D:\WireCard\app\src\main\AndroidManifest.xml:19:9-22:56
+	android:label
+		ADDED from D:\WireCard\app\src\main\AndroidManifest.xml:21:13-57
+	android:theme
+		ADDED from D:\WireCard\app\src\main\AndroidManifest.xml:22:13-44
+	android:name
+		ADDED from D:\WireCard\app\src\main\AndroidManifest.xml:20:13-50
+uses-sdk
+INJECTED from D:\WireCard\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\sirisha.kalluri.ATTRAGROUP\.android\build-cache\f6cb21598f9de716facdf4f2d930b87db55c65bb\output\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:design:26.0.0-alpha1] C:\Users\sirisha.kalluri.ATTRAGROUP\.android\build-cache\fe830f2a3de5b06ec9c11788e3bac1a7c7fbafa3\output\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\sirisha.kalluri.ATTRAGROUP\.android\build-cache\aa4310659a6714154b5c758022601ab3004a3da5\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\sirisha.kalluri.ATTRAGROUP\.android\build-cache\5c694bdee59cb659b6067926ffe8e5fc95c74008\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\sirisha.kalluri.ATTRAGROUP\.android\build-cache\a4222c9f90e872a86030277af38acb09f79843fa\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] C:\Users\sirisha.kalluri.ATTRAGROUP\.android\build-cache\8e4acd317fc7f53c313d07913804f152049b72c1\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:26.0.0-alpha1] C:\Users\sirisha.kalluri.ATTRAGROUP\.android\build-cache\35f46c2fb220225d407e5f4e9f8eb405e4ad070a\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\sirisha.kalluri.ATTRAGROUP\.android\build-cache\40f9fc907a3444cf8d8726ffb8de586c728cfff5\output\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\sirisha.kalluri.ATTRAGROUP\.android\build-cache\fed9d5b58954411beecca9bcdcf40b4490f56bca\output\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\sirisha.kalluri.ATTRAGROUP\.android\build-cache\7b2a807ee274bfd807fc664b86675e5614c0722d\output\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\sirisha.kalluri.ATTRAGROUP\.android\build-cache\4e1bae509d8a14cb503ca32614d9760fa1ab7d6d\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\sirisha.kalluri.ATTRAGROUP\.android\build-cache\a71908c02be7980e5a15fac3d1201c433ed59f35\output\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\sirisha.kalluri.ATTRAGROUP\.android\build-cache\d382b7e9478b2319887f4a30d92da0e9f078a69e\output\AndroidManifest.xml:21:5-23:58
+	tools:overrideLibrary
+		ADDED from [com.android.support:design:26.0.0-alpha1] C:\Users\sirisha.kalluri.ATTRAGROUP\.android\build-cache\fe830f2a3de5b06ec9c11788e3bac1a7c7fbafa3\output\AndroidManifest.xml:23:9-59
+	android:targetSdkVersion
+		INJECTED from D:\WireCard\app\src\main\AndroidManifest.xml
+		INJECTED from D:\WireCard\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\WireCard\app\src\main\AndroidManifest.xml
+		INJECTED from D:\WireCard\app\src\main\AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:design:26.0.0-alpha1] C:\Users\sirisha.kalluri.ATTRAGROUP\.android\build-cache\fe830f2a3de5b06ec9c11788e3bac1a7c7fbafa3\output\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\sirisha.kalluri.ATTRAGROUP\.android\build-cache\aa4310659a6714154b5c758022601ab3004a3da5\output\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\sirisha.kalluri.ATTRAGROUP\.android\build-cache\5c694bdee59cb659b6067926ffe8e5fc95c74008\output\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\sirisha.kalluri.ATTRAGROUP\.android\build-cache\a4222c9f90e872a86030277af38acb09f79843fa\output\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] C:\Users\sirisha.kalluri.ATTRAGROUP\.android\build-cache\8e4acd317fc7f53c313d07913804f152049b72c1\output\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:transition:26.0.0-alpha1] C:\Users\sirisha.kalluri.ATTRAGROUP\.android\build-cache\35f46c2fb220225d407e5f4e9f8eb405e4ad070a\output\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\sirisha.kalluri.ATTRAGROUP\.android\build-cache\40f9fc907a3444cf8d8726ffb8de586c728cfff5\output\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\sirisha.kalluri.ATTRAGROUP\.android\build-cache\fed9d5b58954411beecca9bcdcf40b4490f56bca\output\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\sirisha.kalluri.ATTRAGROUP\.android\build-cache\7b2a807ee274bfd807fc664b86675e5614c0722d\output\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\sirisha.kalluri.ATTRAGROUP\.android\build-cache\4e1bae509d8a14cb503ca32614d9760fa1ab7d6d\output\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\sirisha.kalluri.ATTRAGROUP\.android\build-cache\a71908c02be7980e5a15fac3d1201c433ed59f35\output\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\sirisha.kalluri.ATTRAGROUP\.android\build-cache\d382b7e9478b2319887f4a30d92da0e9f078a69e\output\AndroidManifest.xml:25:5-27:41
+	android:value
+		ADDED from [com.android.support:design:26.0.0-alpha1] C:\Users\sirisha.kalluri.ATTRAGROUP\.android\build-cache\fe830f2a3de5b06ec9c11788e3bac1a7c7fbafa3\output\AndroidManifest.xml:27:9-38
+	android:name
+		ADDED from [com.android.support:design:26.0.0-alpha1] C:\Users\sirisha.kalluri.ATTRAGROUP\.android\build-cache\fe830f2a3de5b06ec9c11788e3bac1a7c7fbafa3\output\AndroidManifest.xml:26:9-47

@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "D:\\WireCard\\app\\build\\intermediates\\res\\merged\\debug\\menu\\activity_home1_drawer.xml",
+        "source": "D:\\WireCard\\app\\src\\main\\res\\menu\\activity_home1_drawer.xml"
+    },
+    {
+        "merged": "D:\\WireCard\\app\\build\\intermediates\\res\\merged\\debug\\menu\\home1.xml",
+        "source": "D:\\WireCard\\app\\src\\main\\res\\menu\\home1.xml"
+    }
+]
